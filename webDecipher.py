@@ -4,8 +4,8 @@ from selenium import webdriver
 from pharse import main
 
 
-txt_Uname = '07206213'
-txt_Upass = '07206213'
+txt_Uname = '********'
+txt_Upass = '********'
 
 driver = webdriver.Chrome()
 driver.get('http://10.100.0.121:8020/UI/login.html')
