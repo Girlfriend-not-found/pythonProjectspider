@@ -4,8 +4,8 @@ from selenium import webdriver
 from pharse import main
 
 
-txt_Uname = '********'
-txt_Upass = '********'
+txt_Uname = ''
+txt_Upass = ''
 
 driver = webdriver.Chrome()
 driver.get('http://10.100.0.121:8020/UI/login.html')
@@ -24,6 +24,7 @@ time.sleep(1)
 cookie = dict()
 for i in driver.get_cookies():
     cookie[i["name"]] = i["value"]
+print(cookie)
 
 
 
